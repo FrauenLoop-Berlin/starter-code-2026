@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section class="hero">
+    <h1>Welcome to Café Cozy</h1>
+    <p>Freshly roasted coffee and homemade pastries.</p>
+  </section>
+  <section class="menu">
+    <h2>Our Menu</h2>
+    <ul class="menu-grid">
+      {% for item in menu %}
+      <li class="menu-item">
+        <div class="item-image">
+          {% if item['image'] %}
+            <img src="{{ url_for('static', filename='img/' ~ item['image']) }}" alt="{{ item['name'] }}">
+          {% else %}
+            <div class="img-placeholder"></div>
+          {% endif %}
+        </div>
+        <div class="item-body">
+          <strong>{{ item['name'] }}</strong> — ${{ '%.2f'|format(item['price']) }}
+          <p>{{ item['description'] }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

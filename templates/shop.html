@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section class="hero">
+    <h1>Shop — Café Cozy</h1>
+    <p>Choose your coffee and add to cart.</p>
+  </section>
+  <div id="cart-summary">Items: 0 — Total: $0.00</div>
+  <section class="shop-container">
+    <div class="menu-list">
+      <h2>Menu</h2>
+      <ul>
+        {% for item in menu %}
+        <li class="menu-item">
+          <div class="item-info">
+            <strong class="item-name">{{ item['name'] }}</strong>
+            <span class="item-price">${{ '%.2f'|format(item['price']) }}</span>
+            <p class="item-desc">{{ item['description'] }}</p>
+          </div>
+          <div class="item-actions">
+            <button class="add-btn" data-id="{{ item['id'] }}" data-name="{{ item['name'] }}" data-price="{{ '%.2f'|format(item['price']) }}">Add</button>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <aside class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+      <button id="clear-cart">Clear Cart</button>
+    </aside>
+  </section>
+
+  <script src="{{ url_for('static', filename='js/shop.js') }}"></script>
+{% endblock %}

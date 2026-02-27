@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="160" viewBox="0 0 240 160">
+  <rect width="100%" height="100%" fill="#f7f3ef"/>
+  <g fill="#a86f4a">
+    <ellipse cx="120" cy="110" rx="50" ry="18" fill="#c69c6d" />
+    <rect x="70" y="50" width="100" height="60" rx="20" ry="20" fill="#d9a77a" />
+  </g>
+  <text x="20" y="30" font-family="Arial" font-size="14" fill="#6b4f3a">Blueberry Muffin</text>
+</svg>
