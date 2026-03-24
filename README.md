@@ -32,3 +32,5 @@ Files
 - `init_db.py`: creates SQLite DB and sample data
 - `templates/`: HTML templates (Home and About)
 - `static/css/style.css`: basic styles
+- `static/img/`: images to use in the project
+
