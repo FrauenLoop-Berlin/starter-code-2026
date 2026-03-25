@@ -1,7 +1,7 @@
 # 1. Pre course
 ## 1.1  Start the project
 
-Clone this repo to your computer. Once you ahve all the files on you computer, check out the instructions in the file `README.md` and follow the steps. 
+Clone this repo to your computer. Once you have all the files on you computer, check out the instructions in the file `README.md` and follow the steps. 
 You have succeeded when you see a coffe shop web site in your browser. 
 Take note of any issues you run into. We will discuss these in class. 
 
