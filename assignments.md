@@ -1,55 +1,44 @@
-# 1. Pre course
-## 1.1  Start the project
+# 3. Python for Data Analysis
 
-Clone this repo to your computer. Once you have all the files on you computer, check out the instructions in the file `README.md` and follow the steps. 
-You have succeeded when you see a coffe shop web site in your browser. 
-Take note of any issues you run into. We will discuss these in class. 
+All materials for this session live in the [`python-session/`](python-session/) folder. Start with its [README](python-session/README.md).
 
-# 2. Before week 2
+## 3.0 Before class — verify your setup
 
+Install Python (3.9+), pandas, and Jupyter, then run the setup check so we don't lose time debugging installs in class:
 
-How do you solve these tasks? Take note of each step you did, which files where changes and if there were changes to the html, css, javaScript or the data base. 
+```bash
+python -m venv venv
+source venv/bin/activate          # Windows: venv\Scripts\activate
+pip install pandas jupyter
+cd python-session
+python init_orders.py
+python check_setup.py
+```
 
+You should see all green ✅ checks. If anything fails, post in Slack before class — we'll help you fix it.
 
-*Hint*: Use  AI (the Ask or Agent feature if you use Cursor or the Chat in Vs Code) to get support with the challenges. You can ask for a plan first to get an overview of the steps to be done and then for the implementation of the steps.
+**Goal:** Have a working Python + pandas + Jupyter setup so you can start coding the moment class begins.
 
+## 3.1 Python fundamentals — Café Cozy order calculator
 
-## 2.1 Edit html
+Open `python-session/01_python_fundamentals.ipynb` and complete the TODO cells. You'll build a checkout function that sums an order, applies a discount, and decides on a free-muffin promo.
 
-Add some content to the page `about.html`. 
-- Add 2 employees to the webpage with an image and some text about the person
-- Add a section with a list of the favourite coffee of the people working in the cafee. 
+**Goal:** Be comfortable with Python variables, lists of dictionaries, `for` loops, and `if`/`else`.
 
-**Goal:** Feel comfortable reading html tags and edit content.  
+## 3.2 Data cleaning with pandas
 
+Open `python-session/02_pandas_cleaning.ipynb`. Clean a messy real-looking sales export — handle missing values, duplicates, inconsistent strings, German decimal commas, mixed date formats.
 
-## 2.2 Work with the styling
-- Change the colors on the web page
-- Add some styling to the about page. Use a class if you apply the style to many elements, and an id if you only add the styling to one element (like the `h1`)
+**Goal:** Be able to inspect a new dataset with pandas and fix the common quality issues from last week's *Data Cleaning Cycle* slide.
 
-**Goal:** Feel comfortable modifying and adding style to an element using classes or ids. 
+## 3.3 Connect Python to SQL — build an ETL pipeline
 
+Open `python-session/03_etl_kpis.ipynb`. Connect Python to a SQLite database, write a SQL JOIN to extract data, compute three business KPIs in pandas, save the results to CSV.
 
+**Goal:** Build the same Extract → Transform → Load pipeline you saw in Session 1, end-to-end in Python.
 
-## 2.3 Fix the image bug
-There is a bug somewhere in the code. The images are not rendering correctly. Use any tools (AI) to understand where the problem is coming from and to fix it. Document your process (you can add notes to this file)
+## 3.4 (Stretch) Pick one stretch goal
 
-**Goal:** Be able to use  AI support to track down a bug and accept the solution. 
+Each notebook has bonus tasks at the bottom. Pick one that interests you. Examples: who is the most loyal customer? Plot a daily revenue trend. Write your KPI table back into the SQLite database.
 
-## 2.4 Check out
-At the moment, there is a `/shop` page where you can add items to your cart. You can also clear the cart. This functionality is created using javaScript. Add the functionality to also have a checkout button. After a click on the button, text should be displayed that says "Thank you for your purchase". 
-Use AI prompting to solve this and inspect which changes are made. 
-
-**Goal:** Be able to use  AI  to add a new functionality to the page
-
-## 2.5 Improve styling - advances
-
-If you look at the project in the browser and change to a smaller screen size (Open the inspector and find the toggle for screen size), you will notice that the layout of the cards with the menu items are a bit off. The images and the text are to the left. Fix this so that the image and text are centered on each card. 
-
-**Goal:** Be able to use  AI  to improve the style of one specific element
-
-## 2.6 Add items to the database
-
-Which other products should be available in the shop? Add more items to the database with all the data fields needed and make sure they are displayed on the shop page as well. It should also be possible to add them to the cart and if selected, the new items should also be included in the check out total sum.
-
-**Goal:** Be able to use  AI  to do larger changes in multiple parts of the code: Add new items to the database, render the items on the page, and make sure the items have the same functionality as already existing items. 
+**Goal:** Practice combining what you learned without step-by-step guidance.

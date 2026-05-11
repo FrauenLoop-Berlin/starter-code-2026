@@ -1,0 +1,31 @@
+order_id,date,product,quantity,price_eur,country
+1001,2026-04-01,Latte,2,3.75,Germany
+1002,2026-04-01, latte ,1,3.75,DE
+1003,2026-04-01,Cappuccino,1,3.50,germany
+1004,2026-04-02,LATTE,1,"3,75",Germany
+1005,02/04/2026,Espresso,3,2.50,deutschland
+1006,2026-04-02,Blueberry Muffin,2,2.00,Germany
+1006,2026-04-02,Blueberry Muffin,2,2.00,Germany
+1007,2026-04-03,latte,,3.75,Germany
+1008,2026-04-03,Cappuccino,2,3.50,
+1009,2026-04-03,espresso,1,2.50,Germany
+1010,2026-04-04,Latte,1,3.75,Germany
+1011,2026-04-04,LATTE,2,3.75,DE
+1012,2026-04-04,Muffin,1,2.00,Germany
+1013,04/04/2026,Cappuccino,1,N/A,Germany
+1014,2026-04-05,Espresso,2,2.50,Austria
+1015,2026-04-05,Latte,1,3.75,germany
+1016,2026-04-05,Blueberry Muffin,1,2.00,Germany
+1017,2026-04-06,latte,1,3.75,Germany
+1018,2026-04-06,Cappuccino,,3.50,Germany
+1019,2026-04-06,Espresso,2,2.50,DE
+1020,2026-04-07,LATTE,1,"3,75",Germany
+1021,2026-04-07,Cappuccino,1,3.50,Germany
+1022,2026-04-07,Blueberry Muffin,2,2.00,deutschland
+1023,2026-04-08,latte,1,3.75,Germany
+1024,2026-04-08,Espresso,3,2.50,Germany
+1024,2026-04-08,Espresso,3,2.50,Germany
+1025,2026-04-09,Cappuccino,1,3.50,Austria
+1026,2026-04-09,Muffin,1,2.00,Germany
+1027,2026-04-09,Latte,2,3.75,Germany
+1028,2026-04-10,LATTE,,3.75,Germany
